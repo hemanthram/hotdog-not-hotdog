@@ -2,3 +2,5 @@
 .vscode/
 *.jpg
 *.png
+.ipynb_checkpoints/
+__pycache__/
