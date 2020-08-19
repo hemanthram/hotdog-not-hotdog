@@ -2,7 +2,7 @@
 
 App which classifies the given image as either a hot dog or not, inspired from Jian Yang in Silicon Valley (TV Series).  
   
-<img src="./git-images/jian.jpeg" width="60%">  
+<p align="center"><img src="./git-images/jian.jpeg" width="60%"> </p>
 
 ## Data Collection :
 
@@ -11,4 +11,25 @@ All the images were taken using [ImageNet](http://image-net.org/download-API)'s 
 PS : Jian Yang was absoltely right about data scrapping .... "That's (a) very boring work. That's scrapping the internet for thousands of food pictures." :smile:
 
 ## Data Preprocessing :
-Some images which contained people in them eating hotdogs were randomly removed manually. All the images are resized to *128x128* and the pixel values are normalized by division with *255*, to make sure that their values are between 0 and 1.
+Some images which contained people in them eating hotdogs were randomly removed manually. All the images are resized to *227x227* and the pixel values are normalized by division with *255*, to make sure that their values are between 0 and 1, and can be fed to the *AlexNet*.
+
+## Architecture
+Standard *AlexNet* architecture is used as shown below, with the last layer being a sigmoid activation instead of the softmax layer, as this is a binary classification problem. The loss function used is the *log-loss* cost.
+
+<p align="center"><img src="./git-images/AlexNet.jpeg" width="60%"> </p>
+  
+## Results
+After 80 epochs, a training set accuracy of *99%* and a test set accuracy of *74%* was achieved by the model. Observing the confusion matrix, it was clear that the number of false negatives was much higher than the number of false positives. Given below are some of the false negatives observed :  
+  
+<p align="center"><img src="./git-images/FN.jpeg" width="45%"> </p>  
+
+It can be seen that most of the hotdog images marked as *nothotdog* have multiple hotdogs on the same image or have some other dish along with a hotdog in the same image, which is probably because a lot of images contain only one hotdog in the training set. Now, some of the false positives are show below :  
+  
+<p align="center"><img src="./git-images/FP.jpeg" width="45%"> </p>
+  
+I honestly couldn't think of any possible explanation as to why these were marked as *hotdog* by the model :P
+
+## Predictions
+Some predictions made by the model on some random images :  
+  
+<p align="center"><img src="./git-images/result.jpeg" width="60%"> </p>
