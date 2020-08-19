@@ -19,7 +19,7 @@ Standard *AlexNet* architecture is used as shown below, with the last layer bein
 <p align="center"><img src="./git-images/AlexNet.jpeg" width="60%"> </p>
   
 ## Results
-After 80 epochs, a training set accuracy of *99%* and a test set accuracy of *74%* was achieved by the model. Observing the confusion matrix, it was clear that the number of false negatives was much higher than the number of false positives. Given below are some of the false negatives observed :  
+After 80 epochs, a training set accuracy of *86%* and a test set accuracy of *80%* was achieved by the model. Observing the confusion matrix, it was clear that the number of false negatives was much higher than the number of false positives. Given below are some of the false negatives observed :  
   
 <p align="center"><img src="./git-images/FN.jpeg" width="45%"> </p>  
 
