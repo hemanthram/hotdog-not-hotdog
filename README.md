@@ -23,7 +23,7 @@ After 80 epochs, a training set accuracy of *99%* and a test set accuracy of *74
   
 <p align="center"><img src="./git-images/FN.jpeg" width="45%"> </p>  
 
-It can be seen that most of the hotdog images marked as *nothotdog* have multiple hotdogs on the same image or have some other dish along with a hotdog in the same image, which is probably because a lot of images contain only one hotdog in the training set. Now, some of the false positives are show below :  
+It can be seen that most of the hotdog images marked as *nothotdog* have multiple hotdogs on the same image, have some other dish along with a hotdog in the same image or a zoomed part of a hotdog. This is probably because a lot of images in the training set contain only one hotdog. Now, some of the false positives are show below :  
   
 <p align="center"><img src="./git-images/FP.jpeg" width="45%"> </p>
   
