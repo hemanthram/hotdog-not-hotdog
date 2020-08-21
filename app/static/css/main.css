@@ -179,6 +179,12 @@ iframe {
   padding: 42px 55px 45px 55px;
 }
 
+div.home-icon {
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
 
 /*------------------------------------------------------------------
 [ Result ]*/
