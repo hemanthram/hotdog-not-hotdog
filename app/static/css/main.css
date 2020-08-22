@@ -163,11 +163,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #a64bf4;
-  background: -webkit-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: -o-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(45deg, #00dbde, #fc00ff);
-  background: linear-gradient(45deg, #00dbde, #fc00ff);
+  background: brown;
+  background: -webkit-linear-gradient(45deg, orange, brown);
+  background: -o-linear-gradient(45deg, orange, brown);
+  background: -moz-linear-gradient(45deg, orange, brown);
+  background: linear-gradient(45deg, orange, brown);
   
 }
 
@@ -216,6 +216,16 @@ div.home-icon {
   text-align: center;
   padding-bottom: 44px;
 }
+.contact1001-form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 
 .contact100-form-result-title {
   display: block;
@@ -227,6 +237,19 @@ div.home-icon {
   padding-bottom: 44px;
 }
 
+.result_txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.result-text {
+  font-family: Poppins-Bold;
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+
 /*------------------------------------------------------------------
 [ Input ]*/
 
@@ -235,7 +258,7 @@ div.home-icon {
   position: relative;
   border-bottom: 2px solid #d9d9d9;
   padding-bottom: 13px;
-  margin-bottom: 27px;
+  margin-bottom: 40px;
 }
 
 .label-input100 {
@@ -335,10 +358,10 @@ textarea.input100 {
   width: 300%;
   height: 100%;
   background: #a64bf4;
-  background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -o-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
-  background: linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(left, orange, brown, orange, brown);
+  background: -o-linear-gradient(left, orange, brown, orange, brown);
+  background: -moz-linear-gradient(left, orange, brown, orange, brown);
+  background: linear-gradient(left, orange, brown, orange, brown);
   top: 0;
   left: -100%;
 
@@ -400,6 +423,7 @@ textarea.input100 {
 [ Alert validate ]*/
 
 .validate-input {
+  height: 20px;
   position: relative;
 }
 
@@ -490,7 +514,7 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
 [ in select ]*/
-.select2-container .select2-selection--single .select2-selection__rendered {
+.select2-container .select2-selection--single .select2-selection__rendebrown {
   font-family: Poppins-Medium;
   font-size: 18px;
   color: #333333;
@@ -562,19 +586,19 @@ textarea.input100 {
 
 .select2-container .select2-results__option[aria-selected="true"] {
   background: #a64bf4;
-  background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
-  background: -o-linear-gradient(right, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(right, orange, brown);
+  background: -o-linear-gradient(right, orange, brown);
+  background: -moz-linear-gradient(right, orange, brown);
+  background: linear-gradient(right, orange, brown);
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
   background: #a64bf4;
-  background: -webkit-linear-gradient(right, #00dbde, #fc00ff);
-  background: -o-linear-gradient(right, #00dbde, #fc00ff);
-  background: -moz-linear-gradient(right, #00dbde, #fc00ff);
-  background: linear-gradient(right, #00dbde, #fc00ff);
+  background: -webkit-linear-gradient(right, orange, brown);
+  background: -o-linear-gradient(right, orange, brown);
+  background: -moz-linear-gradient(right, orange, brown);
+  background: linear-gradient(right, orange, brown);
   color: white;
 }
 
