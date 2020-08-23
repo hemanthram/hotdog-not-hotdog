@@ -1,0 +1,38 @@
+#grad1 {
+  background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}
+
+#grad2 {
+  background-image: linear-gradient(270deg, darkblue, violet);
+}
+
+#grad {
+  background-image: linear-gradient(90deg, #fcc808, #d21e2b);
+}
+
+html, body { margin: 0; height: 100%; }
+
+body {
+  display: flex;
+  align-items: center;
+}
+
+.jumbotron
+{
+  /* background-color:gold !important; */
+  background-image: linear-gradient(180deg, gold, white);
+  margin:auto;
+  width:60%;
+  text-align: center;
+ }
+
+ input[type=submit]
+ {
+  background-image: linear-gradient(180deg, #fcc808, #d21e2b);
+  color: white;
+ }
+ 
+ input[type=submit]:hover
+ {
+  background-image: linear-gradient(360deg, #fcc808, #d21e2b);
+ }

@@ -1,0 +1,42 @@
+{% extends "predictor/base.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block start_body %}
+
+
+<div class="jumbotron">
+
+    <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.png' %}" alt="logo" width="12%" height="8%">
+    </a>
+
+    <!-- <img href="{% url 'index' %}" src="{% static 'images/logo.png' %}" alt="LOGO" width="15%" height="10%"> -->
+
+{% if is_uploaded %}
+
+    {% if is_hotdog %}
+        <h1>Hotdog</h1>
+        <img src="{% static 'images/check.png' %}" alt="logo" width="15%" height="10%">
+    {% else %}
+        <h1>Not Hotdog</h1>
+        <img src="{% static 'images/wrong.png' %}" alt="logo" width="15%" height="10%">
+    {% endif %}
+
+{% else %}
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn" type="submit" name="" value="Upload & Analyze image">
+    </form>
+
+{% endif %}
+
+</div>
+
+
+{% endblock %}
