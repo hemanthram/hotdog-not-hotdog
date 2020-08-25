@@ -65,9 +65,9 @@ def model_predict(img_path, model):
     result_html1 = path/'static'/'result1.html'
     result_html2 = path/'static'/'result2.html'
     if(answer == "Hotdog"):
-        result = "<p class=\"result-text\">"+answer+"</p><img src=\"static/images/right.jpg\" width=\"40px\" height=\"40px\" >"
+        result = "<p class=\"result-text\">"+answer+"</p><img src=\"static/images/right.jpeg\" width=\"40px\" height=\"40px\" >"
     else:
-        result = "<p class=\"result-text\">"+answer+"</p><img src=\"static/images/wrong.jpg\" width=\"40px\" height=\"40px\" >"
+        result = "<p class=\"result-text\">"+answer+"</p><img src=\"static/images/wrong.jpeg\" width=\"40px\" height=\"40px\" >"
     result_html = str(result_html1.open().read() +str(result) + result_html2.open().read())
     return HTMLResponse(result_html)
 
