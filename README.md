@@ -33,3 +33,8 @@ I honestly couldn't think of any possible explanation as to why these were marke
 Some predictions made by the model on some random images :  
   
 <p align="center"><img src="./git-images/result.jpeg" width="60%"> </p>
+  
+## The Final App - Hotdog or Not ?  
+Sample images of the final app :
+  
+<p align="center"><img src="./git-images/app2.jpeg" width="60%"> </p>
